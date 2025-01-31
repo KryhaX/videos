@@ -1,0 +1,18 @@
+{% extends 'main.html' %}
+{% load bootstrap %}
+
+{% block title %}Confirm{% endblock %}
+
+{% block page %}
+    <div class="card" style="width: 32rem;">
+        <div class="card-body">
+        <h5 class="card-title">Are you sure you want to delete "{{ video }}"</h5>
+            <form method="POST">
+              {% csrf_token %}
+              <button type="submit" class="btn btn-danger">Delete video</button>
+              <a href="{% url 'all_videos'  %}"><button class="btn btn-danger">Back</button></a>
+            </form>
+        </div>
+    </div>
+
+{% endblock %}

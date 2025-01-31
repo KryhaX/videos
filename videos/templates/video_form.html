@@ -1,0 +1,49 @@
+{% extends 'main.html' %}
+{% load bootstrap %}
+
+{% block title %}Film Form{% endblock %}
+
+{% block page %}
+
+     <div class="card" style="width: 32rem; float: left; margin-right: 1rem;">
+        <div class="card-body">
+            {% if is_new %}
+                    <h5 class="card-title">New Video</h5>
+                  {% else  %}
+                    <h5 class="card-title">Edit Video</h5>
+                  {% endif %}
+
+              <form method="POST" enctype="multipart/form-data">
+                  {% csrf_token %}
+                  {{ form_video|bootstrap }}
+                  {{ form_added_info|bootstrap }}
+                  {% if is_new %}
+                    <button type="submit" class="btn btn-danger">Save new video</button>
+                  {% else  %}
+                    <button type="submit" class="btn btn-danger">Save</button>
+                  {% endif %}
+              </form>
+        </div>
+     <a href="{% url 'all_videos'  %}"><button class="btn btn-danger">Back</button></a>
+    </div>
+    {% if not is_new %}
+         <div class="card" style="width: 32rem; float: left; margin-right: 1em;">
+            <div class="card-body">
+                <h5 class="card-title">Review Video</h5>
+                <form method="POST" enctype="multipart/form-data">
+                  {% csrf_token %}
+                  {{ form_review|bootstrap }}
+                    <button type="submit" class="btn btn-danger">Save Review</button>
+                </form>
+            </div>
+        </div>
+    {% else %}
+    {% endif %}
+
+    {% for review in reviews %}
+        <h4>Stars: {{ review.stars }}</h4>
+        <p>Stars: {{ review.review }}</p>
+    {% endfor %}
+
+
+{% endblock %}
