@@ -1,2 +1,5 @@
-__pycache__/
-setup_project.sh
+*__pycache__/
+*.idea
+*.sqlite3
+*pyc
+my_media
