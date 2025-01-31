@@ -32,11 +32,14 @@ At this stage, the following functionality has been implemented:
   - Users can interact with the CRUD features through the interface, with the ability to view, add, edit, and delete videos.
 
 ### Preview : 
-Main page: 
-![img.png](img.png)
-
-Video Model :
-![img_1.png](img_1.png)
+### Main page:
+![mainpage.png](../mainpage.png)
+### New Video Page:
+![new_video.png](../new_video.png)
+### Edit Video Page :
+![edit_video.png](../edit_video.png)
+### Login Page: 
+![login_page.png](../login_page.png)
 
 ## ⚠️ Project Status ⚠️
 This project is **still in progress**. While the core CRUD functionality for Video objects is implemented, there are several features planned for future development, including user authentication, movie ratings and reviews, recommendations, and more advanced search options.
@@ -45,7 +48,7 @@ Stay tuned for updates!
 ## Technologies Used
 
 - **Backend**: Django
-- **Frontend**: HTML, CSS, JavaScript (with optional frameworks like Bootstrap or React)
+- **Frontend**: HTML, CSS, JavaScript with frameworks like Bootstrap 
 - **Database**: PostgreSQL (or SQLite for development)
 - **Authentication**: Django’s built-in authentication system
 ## Installation
@@ -54,4 +57,20 @@ Stay tuned for updates!
 
 ```bash
 git clone https://github.com/your-username/videos.git
-cd videos
+cd videos/videos
+
+```
+### 2. Install requirement 
+```bash
+pip3 install requirements-dev.txt
+```
+### 3. Run server 
+```bash
+python3 manage.py runserver
+```
+### 4. Go to All videos  
+```bash
+http://127.0.0.1:8000/videos/all/
+```
+
+
