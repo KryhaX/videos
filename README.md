@@ -33,13 +33,13 @@ At this stage, the following functionality has been implemented:
 
 ### Preview : 
 ### Main page:
-![mainpage.png](../mainpage.png)
+![mainpage.png](mainpage.png)
 ### New Video Page:
-![new_video.png](../new_video.png)
+![new_video.png](new_video.png)
 ### Edit Video Page :
-![edit_video.png](../edit_video.png)
-### Login Page: 
-![login_page.png](../login_page.png)
+![edit_video.png](edit_video.png)
+### Login Page:
+![login_page.png](login_page.png)
 
 ## ⚠️ Project Status ⚠️
 This project is **still in progress**. While the core CRUD functionality for Video objects is implemented, there are several features planned for future development, including user authentication, movie ratings and reviews, recommendations, and more advanced search options.
@@ -58,7 +58,6 @@ Stay tuned for updates!
 ```bash
 git clone https://github.com/your-username/videos.git
 cd videos/videos
-
 ```
 ### 2. Install requirement 
 ```bash
