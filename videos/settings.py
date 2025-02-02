@@ -30,7 +30,7 @@ SECRET_KEY = config('SECRET_KEY')
 # DEBUG = config('DEBUG', default=False, cast=bool)
 DEBUG = True
 
-ALLOWED_HOSTS = ["videodeployment.onrender.com", "127.0.0.1"]
+ALLOWED_HOSTS = ["https://videos-ym87.onrender.com/", "127.0.0.1"]
 
 
 # Application definition
