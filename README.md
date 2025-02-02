@@ -70,6 +70,7 @@ cd videos/videos
 ```
 ### 2. Install requirement 
 ```bash
+pip3 install -r requirements.txt
 ```
 ### 3. Run server 
 ```bash
