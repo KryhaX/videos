@@ -1,6 +1,13 @@
 # Filmweb Clone (Django)
 ## Visit site on :
 https://videos-ym87.onrender.com/videos/all
+## API
+https://videos-ym87.onrender.com/users
+https://videos-ym87.onrender.com/videos
+### If you want to test CRUD , just login as admin :
+Login: admin
+Password: admin 
+
 
 This is a project to create a clone of the popular website [Filmweb](https://www.filmweb.pl/) using Django. The platform is for browsing movies, TV shows  and providing ratings and reviews.
 
